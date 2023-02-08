@@ -4,6 +4,8 @@
   padding: 0;
   margin: 0;
   box-sizing: 0;
+  /* font-family: 'Alata', sans-serif; */
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 main img {
@@ -41,7 +43,26 @@ nav {
 }
 
 .hero-img {
+  filter: contrast(1.2);
+}
+
+.hero-section {
+  position: relative;
+  margin-bottom: 6rem;
+}
+
+.title-container {
+  max-width: 40rem;
   position: absolute;
-  width: 100%;
-  width: 375px;
+  color: #fff;
+  top: 34.5%;
+  margin: 0 1.5rem;
+  border: 2px solid white;
+}
+
+.title-container h1 {
+  padding: 1.625rem 1.5rem 1rem;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  line-height: 2.375rem;
 }
