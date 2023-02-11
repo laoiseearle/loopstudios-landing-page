@@ -7,10 +7,6 @@
   font-family: 'Josefin Sans', sans-serif;
 }
 
-main img {
-  width: 100%;
-}
-
 html {
   font-size: 16px;
 }
@@ -43,6 +39,7 @@ nav {
 
 .hero-img {
   filter: contrast(1.2);
+  width: 100%;
 }
 
 .hero-section {
@@ -71,6 +68,7 @@ nav {
 }
 
 .company-section img {
+  width: 100%;
   margin-bottom: 3rem;
 }
 
@@ -157,4 +155,54 @@ nav {
   background-color: transparent;
   border: 1px solid rgba(0, 0, 0, 0.4);
   margin-top: 2.125rem;
+}
+
+/* ------ Footer ------ */
+/* ------------------ */
+
+.footer {
+  padding: 3.5rem 3.1875rem 3.5rem 3.25rem;
+  background-color: #000000;
+  text-align: center;
+}
+
+.flex-left {
+  padding-bottom: 2.75rem;
+}
+
+.flex-left img {
+  height: 1.5rem;
+  padding-bottom: 2rem;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #fff;
+  font-family: 'Alata';
+  font-weight: 400;
+  font-size: 0.9375rem;
+  line-height: 1.5625rem;
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 0.8125rem;
+  gap: 1rem;
+}
+
+.flex-right p {
+  font-family: 'Alata';
+  color: #fff;
+  opacity: 0.5;
+  font-size: 0.9375rem;
+  line-height: 1.5625rem;
+  font-weight: 400;
 }
