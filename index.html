@@ -22,8 +22,14 @@
     <header>
       <div class="header-wrapper flex">
         <img class="logo" src="images/logo.svg" alt="" />
-        <img class="ham-icon" src="images/icon-hamburger.svg" alt="" />
-        <nav>
+        <img
+          class="ham-icon"
+          id="hamIcon"
+          src="images/icon-hamburger.svg"
+          alt=""
+          onclick="openMenu()"
+        />
+        <nav id="menu">
           <ul class="navigation-links">
             <li><a href="#">About</a></li>
             <li><a href="#">Careers</a></li>
@@ -172,5 +178,6 @@
         </div>
       </footer>
     </main>
+    <script src="script.js"></script>
   </body>
 </html>

@@ -34,10 +34,42 @@ header {
 
 .logo {
   height: 24px;
+  z-index: 1;
+}
+
+.ham-icon {
+  z-index: 1;
 }
 
 nav {
   display: none;
+  background-color: #00000000;
+}
+
+.navigation-links {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding-left: 1.5rem;
+  top: 37%;
+}
+
+.navigation-links a {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+
+.menu-open {
+  display: block;
+  position: fixed;
+  background-color: #000;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
 }
 
 /* ------ Hero Section ------ */
