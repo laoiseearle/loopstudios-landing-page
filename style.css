@@ -250,3 +250,58 @@ nav {
   line-height: 1.5625rem;
   font-weight: 400;
 }
+
+@media only screen and (min-width: 400px) {
+  .header-wrapper {
+    padding: 3.5rem 2.5rem 0;
+  }
+
+  .navigation-links {
+    padding-left: 2.5rem;
+  }
+
+  .title-container {
+    padding: 0 2.5rem;
+  }
+
+  .company-section {
+    padding: 0 2.5rem;
+  }
+
+  .creation-section {
+    padding: 0 2.5rem;
+  }
+  .logo {
+    /* height: 2rem; */
+  }
+  .ham-icon {
+    /* height: 1.2rem; */
+  }
+}
+
+@media only screen and (min-width: 540px) {
+  .header-wrapper {
+    padding: 3.5rem 3.5rem 0;
+  }
+  .navigation-links {
+    padding-left: 3.5rem;
+  }
+
+  .title-container {
+    padding: 0 3.5rem;
+  }
+
+  .company-section {
+    padding: 0 3.5rem;
+  }
+
+  .creation-section {
+    padding: 0 3.5rem;
+  }
+  .logo {
+    /* height: 2rem; */
+  }
+  .ham-icon {
+    /* height: 1.2rem; */
+  }
+}
