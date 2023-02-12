@@ -83,6 +83,8 @@ nav {
 .hero-img {
   filter: contrast(1.2);
   width: 100%;
+  max-height: 40rem;
+  object-fit: cover;
 }
 
 .title-container {
