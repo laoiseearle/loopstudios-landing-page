@@ -30,6 +30,8 @@ header {
   right: 0;
   padding: 2.5rem 1.5rem 0;
   z-index: 1;
+  max-width: 50rem;
+  margin: auto;
 }
 
 .logo {
@@ -88,11 +90,21 @@ nav {
 }
 
 .title-container {
-  max-width: 40rem;
   position: absolute;
-  color: #fff;
   top: 34.5%;
-  margin: 0 1.5rem;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  max-width: 50rem;
+  padding: 0 1.5rem;
+  margin: auto;
+}
+.title-box {
+  width: 100%;
+  color: #fff;
+  /* max-width: 37.5rem; */
+  /* max-width: 27.5rem; */
+  max-width: min-content;
   border: 2px solid white;
 }
 
@@ -108,6 +120,8 @@ nav {
 
 .company-section {
   padding: 0 1.5rem;
+  max-width: 50rem;
+  margin: auto;
 }
 
 .company-section img {
@@ -140,7 +154,9 @@ nav {
 
 .creation-section {
   padding: 0 1.5rem;
+  margin: auto;
   margin-bottom: 6rem;
+  max-width: 50rem;
   text-align: center;
 }
 
