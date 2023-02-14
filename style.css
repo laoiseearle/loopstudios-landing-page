@@ -416,7 +416,7 @@ footer {
 
 @media only screen and (min-width: 900px) {
   .hero-img {
-    filter: brightness(0.4);
+    filter: brightness(0.6);
   }
 }
 
