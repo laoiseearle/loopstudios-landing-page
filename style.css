@@ -59,6 +59,7 @@ nav {
 }
 
 .navigation-links a {
+  position: relative;
   text-decoration: none;
   color: #fff;
   text-transform: uppercase;
@@ -203,6 +204,7 @@ nav {
   font-size: clamp(1.5rem, 1.324rem + 0.751vw, 2rem);
   text-transform: uppercase;
   max-width: min-content;
+  user-select: none;
 }
 
 .grid-item:nth-of-type(5) h3,
@@ -251,6 +253,7 @@ footer {
 }
 
 .footer-links a {
+  position: relative;
   text-decoration: none;
   color: #fff;
   font-family: 'Alata';
@@ -266,12 +269,35 @@ footer {
   gap: 1rem;
 }
 
+.social-links a {
+  position: relative;
+}
+
 .flex-right p {
   font-family: 'Alata';
   color: #fff;
   opacity: 0.5;
   font-size: 0.9375rem;
   line-height: 1.5625rem;
+}
+
+.navigation-links a::after,
+.footer-links a::after,
+.social-links a::after {
+  content: '';
+  display: none;
+  height: 2px;
+  width: 24px;
+  position: absolute;
+  top: 1.5rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-color: #fff;
+}
+
+.social-links a::after {
+  top: 1.2rem;
 }
 
 @media only screen and (min-width: 700px) {
@@ -380,6 +406,7 @@ footer {
   }
 
   .social-links {
+    position: relative;
     padding: 0;
     margin-bottom: 0.875rem;
     margin-bottom: 1.275rem;
@@ -435,5 +462,37 @@ footer {
   .grid-item:nth-of-type(5) h3,
   .grid-item:nth-of-type(3) h3 {
     max-width: fit-content;
+  }
+}
+
+@media (hover: hover) {
+  .footer-links li:hover a::after,
+  .social-links li:hover a::after {
+    display: block;
+  }
+
+  .grid-item:hover {
+    background: unset;
+  }
+  .grid-item img:hover {
+    cursor: pointer;
+    filter: opacity(0.2);
+  }
+
+  .grid-item:hover h3 {
+    color: #000;
+    cursor: pointer;
+  }
+
+  .creation-section button:hover {
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+  }
+}
+
+@media (hover: hover) and (min-width: 700px) {
+  .navigation-links li:hover a::after {
+    display: block;
   }
 }
