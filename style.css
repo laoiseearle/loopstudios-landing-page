@@ -288,18 +288,72 @@ nav {
     padding: 0 2.5rem;
   }
 
+@media only screen and (min-width: 800px) {
   .company-section {
-    padding: 0 2.5rem;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1.5fr 0.5fr;
+    margin-bottom: clamp(3.75rem, -6.563rem + 20.625vw, 12rem);
   }
 
-  .creation-section {
-    padding: 0 2.5rem;
+  .company-section img {
+    max-width: 731px;
+    margin-bottom: 0;
   }
-  .logo {
-    /* height: 2rem; */
+
+  .company-info {
+    padding: 0;
+    text-align: left;
+    padding-left: 4rem;
+    position: absolute;
+    margin: auto;
+    margin-right: clamp(1.5rem, 6.4vw, 3.5rem);
+    padding: clamp(2rem, -3rem + 10vw, 6rem) 0 0 clamp(2rem, -3rem + 10vw, 6rem);
+    background-color: #fff;
+    right: 0;
+    bottom: 0;
+    max-width: clamp(26.25rem, 16.797rem + 18.906vw, 33.813rem);
   }
-  .ham-icon {
-    /* height: 1.2rem; */
+
+  .company-info p {
+    font-size: clamp(0.7rem, 0.367rem + 0.76vw, 0.938rem);
+  }
+
+  .footer {
+    padding-top: 2.75rem;
+    padding-bottom: 2.0625rem;
+    display: flex;
+    justify-content: space-between;
+    max-width: 76.375rem;
+    margin: auto;
+    height: 160px;
+  }
+
+  .flex-left img {
+    margin-bottom: 0;
+    margin-bottom: 0.875rem;
+    margin-bottom: 1.275rem;
+  }
+
+  .flex-left {
+    text-align: left;
+    padding: 0;
+  }
+
+  .flex-right {
+    text-align: right;
+    align-items: flex-end;
+  }
+
+  .footer-links {
+    flex-direction: row;
+  }
+
+  .social-links {
+    padding: 0;
+    margin-bottom: 0.875rem;
+    margin-bottom: 1.275rem;
+    justify-content: end;
   }
 }
 
